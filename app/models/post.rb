@@ -1,18 +1,14 @@
-
-# rubocop:disable all
-# frozen_string_literal: true
-
 class Post < ApplicationRecord
-    has_many :likes
-    has_many :comments
-    belongs_to :user, class_name: "User"
-    
-  def update_posts_counter
-    user.update(posts_counter: user.posts.count)
+  belongs_to :author, class_name: 'User'
+  has_many :comments
+  has_many :likes
+  after_save :update_post_counter
+
+  def update_post_counter
+    author.increment!(:posts_counter)
   end
 
-  def five_most_recent_comments
+  def recent_comments
     comments.order(created_at: :desc).limit(5)
   end
 end
-# rubocop:enable all
