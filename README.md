@@ -1,31 +1,8 @@
 <a name="readme-top"></a>
 
-<!--
-HOW TO USE:
-This is an example of how you may give instructions on setting up your project locally.
-
-Modify this file to match your project and remove sections that don't apply.
-
-REQUIRED SECTIONS:
-- Table of Contents
-- About the Project
-  - Built With
-  - Live Demo
-- Getting Started
-- Authors
-- Future Features
-- Contributing
-- Show your support
-- Acknowledgements
-- License
-
-OPTIONAL SECTIONS:
-- FAQ
-
-After you're finished please remove all the comments and instructions!
--->
-
-<h1>Blog app</h1>
+<div align="center">
+  <img src="nahnah_logo.png" alt="logo" width="250"  height="auto" />
+</div>
 
 <!-- TABLE OF CONTENTS -->
 
@@ -48,36 +25,48 @@ After you're finished please remove all the comments and instructions!
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 School Library <a name="about-project"></a>
+# 📖 Blog-App <a name="about-project"></a>
 
-Blog app is a project built with ruby on rails(ROR). This web app serves as an online blogs where people can create their personal accounts and also post new articles and can also comment and like other posts as well as theirs
+ **The Blog App** is a classic example of a blog website built using Ruby on Rails and PostgreSQL.It is a fully functional website that shows a list of posts and empowers readers to interact with them by adding comments and liking posts.
 
-## 🛠 Built With <a name="built-with">Server</a>
+
+## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
 <details>
-  <summary>Server</summary>
+  <summary>Client</summary>
   <ul>
-    <li><a href="https://expressjs.com/">Ruby</a></li>
+    <li><a href="https://www.ruby-lang.org/en/">Ruby on rails</a></li>
+  </ul>
+</details>
+
+<details>
+<summary>Database</summary>
+  <ul>
+    <li><a href="https://www.postgresql.org/">postgres</a></li>
   </ul>
 </details>
 
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
+- Making use of Ruby on Rails
+- Making use of PostgreSQL
 
-- **Create new user account**
-- **Create new posts**
-- **Like posts**
-- **Comment on posts**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+> None
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -85,38 +74,68 @@ Blog app is a project built with ruby on rails(ROR). This web app serves as an o
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
+> To start and run this project
+```
+bundle install
+```
+```
+ruby main.rb
+```
+
 To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
-In order to run this project you need:
-tup
-
-Clone this repository to your desired folder:
-  cd my-folder
-  git clone git@github.com:kennyegun24/student-library.git
-  
-### Install
-
-Install this project with: `bundle install`
+- IDE to edit and run the code (We use Visual Studio Code 🔥).
+- Git to versionning your work.
+- PostgreSQL
 
 
-### Check for linter errors
+### Install & Setup
 
-To test your code for errors, rub the following
-`rubocop --colors`
+To setup and install this sample ROR Blog project, follow the below steps:
+- Clone this project by the command: 
+
+```
+$ git clone https://github.com/NahnahAJ/Blog-App.git
+```
+
+- Then switch to the project folder by the bellow query:
+
+```
+$ cd blograils
+```
+
+- Install the required dependecies with `bundle install`
+- Install npm dependencies with `npm install`
+- **Before running below commands update [config/database.yml](./config/database.yml) with your local `DB`credentials. Then run:**
+      - **`rake db:create`**
+      - **`rake db:migrate`**
+      - **`rake db:seed`**
+- With Ruby on Rails and PostgreSQL installed in your environment, you can run `rails server` to run the website.
+
+### Tests
+
+- Run `rake db:seed RAILS_ENV=test` to seed the testing database
+- Run `rspec`
+
+### Deployment
+
+N/A
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
 
-## 👥 Authors <a name="authors"></a>
+## 👥 Author <a name="authors"></a>
 
-👤 **Author**
+👤 **Kaweesi Matia**
 
+- 
 - GitHub: [@Kaweesi-Matia](https://github.com/Kaweesi-Matia)
 - Twitter: [@kaweesimatia](https://twitter.com/kaweesimatia)
 - LinkedIn: [Kaweesi Matia](https://www.linkedin.com/in/kaweesi-matia/)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -124,7 +143,10 @@ To test your code for errors, rub the following
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Add UI**
+> Describe 1 - 3 features you will add to the project.
+
+- [ ] **Build the project schemas**
+- [ ] **Use postgresql as my database instead of sql**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -142,7 +164,7 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-If you like this project...
+> If you like this project give it a ⭐️
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -150,9 +172,10 @@ If you like this project...
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank...
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+- I would like to thank Microverse.
+- Hat tip to anyone whose code was used
+- Inspiration
+- etc
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -161,7 +184,5 @@ I would like to thank...
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
