@@ -29,4 +29,12 @@ RSpec.describe Post, type: :model do
     subject.comments_counter = 20
     expect(subject).to_not be_valid
   end
+  it 'is not valid if comments_counter is less than 0' do
+    post = Post.new(comments_counter: -1)
+    expect(post).to_not be_valid
+  end
+  it 'is not valid if likes_counter is less than 0' do
+    post = Post.new(likes_counter: -1)
+    expect(post).to_not be_valid
+  end
 end
