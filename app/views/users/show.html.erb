@@ -1,2 +1,9 @@
 <h1>User details page </h2>
 <p>Details of the user which includes both Bio and Posts </h2>
+<h2><%= @user.Name%></h2>
+<p><%= @user.Bio%></p>
+<p><%= @user.PostsCounter%></p>
+<%=link_to "Back", users_path%>
+<%=link_to "Posts", user_posts_path(@user)%>
+
+
