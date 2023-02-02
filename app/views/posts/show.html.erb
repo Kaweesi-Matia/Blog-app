@@ -1,2 +1,21 @@
-<h1> User posts page </h1>
-<p> Details of a specific post of a user</p>
+
+
+<div class="container">
+<div class="post-container">
+  <h2><%= @post.Title %> by <%= @post.user.Name %></h2>
+  <h6>Comments: <%= @post.comments_counter %>, Likes: <%= @post.likes_counter %></h6>
+  <p class="post-text"><%= @post.Text %></p>
+</div>
+
+<div class="comments_content">
+  <% if @post.all_comments.count.zero? %>
+  <p>Post has no comments yet</p>
+  <%else%>
+  <% @post.all_comments.each do |comment| %>
+    <p><%= comment.user.Name %>: <%= comment.text %></p>
+  <% end %>
+  <% end %>
+</div>
+</div>
+
+

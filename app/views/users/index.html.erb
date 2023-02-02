@@ -1,2 +1,16 @@
-<h1> Home Page </h1>
-<p> List of all users </p>
+
+
+<div class="container flex_display">
+<% @users.each do |user| %>
+  <div class="users-container flex_display">
+    <div class="person-image">
+    
+     
+    </div>
+    <div class="user_details">
+      <h2><%= link_to user.Name, user, class: "link_button"  %></h2>
+      <p>Number of posts: <%= user.PostsCounter %></p>
+    </div>
+  </div>
+<%end%>
+</div>
