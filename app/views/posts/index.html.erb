@@ -3,12 +3,15 @@
 <div class="container">
 <div class="users-container flex_display">
    <div class="person-image">
+   
+  
+
 
     
    </div>
    <div class="user_details">
      <h2><%= @user.Name %></h2>
-     <p>Number of posts: <%= @user.PostsCounter %></p>
+     <p>Number of posts: <%= @user.PostsCounter %> </p>
    </div>
 </div>
 
@@ -18,6 +21,9 @@
       <h2><%= link_to "Post title: #{post.Title}", user_post_path(@user.id, post.id), class: "link_button" %></h2>
       <p><%= post.Text %></p>
       <h4>Comments: <%=post.comments_counter %>, Likes: <%= post.likes_counter %></h4>
+      <%= form_with url: "/users/#{@user.id}/posts/#{post.id}/likes" do |form| %>
+        <%= form.submit "Like Post" %>
+      <% end %>
   </div>
   <div class="comments_content">
     <% if post.recent_comments.count.zero? %>
