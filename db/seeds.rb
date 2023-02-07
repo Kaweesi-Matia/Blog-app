@@ -10,3 +10,5 @@ users=User.create([{Name:"Kaweesi",photo:"",Bio:"He wants to get a remote job.:f
 {Name:"Rodrigo De Paul",photo:"Am new here",Bio:"Iam a villian",PostsCounter:24},
 {Name:"Wilber",photo:"Am new here",Bio:"Power is the most important resource",PostsCounter:23},
 {Name:"Senteza",photo:"Am new here",Bio:"He wants food",PostsCounter:4}])
+@first_post = Post.create(Title: 'Hellowin', Text: 'This is my first post', user_id: 1,comments_counter:3,likes_counter:2)
+@second_post = Post.create(Title: 'Musically', Text: 'Micheal Jackson is the best ever', user_id: 1,comments_counter:3,likes_counter:2)
