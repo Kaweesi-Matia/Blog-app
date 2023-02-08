@@ -11,6 +11,7 @@ RSpec.describe 'User index integration tests', type: :system do
     @users.each do |user|
       expect(page).to have_text(user.Name)
       expect(page).to have_content('Number of posts')
+     
 
       expect(page).to have_text(user.PostsCounter)
     end
