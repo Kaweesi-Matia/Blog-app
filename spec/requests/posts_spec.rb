@@ -12,14 +12,14 @@ RSpec.describe 'Posts', type: :request do
     end
   end
 
-describe 'GET /show' do
-  context 'when the page is opened ' do
-    it 'return a correct response' do
-      get '/users/:id/posts/:id'
-      expect(response).to have_http_status(200)
-      expect(response).to render_template(:show)
-      expect(response.body).to include('Details of a specific post of a user')
+  describe 'GET /show' do
+    context 'when the page is opened ' do
+      it 'return a correct response' do
+        get '/users/:id/posts/:id'
+        expect(response).to have_http_status(200)
+        expect(response).to render_template(:show)
+        expect(response.body).to include('Details of a specific post of a user')
+      end
     end
   end
-end
 end
