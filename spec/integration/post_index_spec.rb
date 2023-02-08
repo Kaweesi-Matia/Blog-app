@@ -5,8 +5,8 @@ RSpec.describe 'Users/posts/ page', type: :system do
                          photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Andrew_Carnegie%2C_by_Theodore_Marceau.jpg/800px-Andrew_Carnegie%2C_by_Theodore_Marceau.jpg',
                          Bio: 'Industrialist.',
                          PostsCounter: 2)
-    @first_post = Post.create(Title: 'Helloween', Text: 'This is my first post', user_id: @user1.id, comments_counter: 3,
-                              likes_counter: 2)
+    @first_post = Post.create(Title: 'Helloween', Text: 'This is my first post', user_id: @user1.id,
+                              comments_counter: 3, likes_counter: 2)
     @second_post = Post.create(Title: 'Musically', Text: 'Micheal Jackson is the best ever', user_id: @user1.id,
                                comments_counter: 3, likes_counter: 2)
   end
