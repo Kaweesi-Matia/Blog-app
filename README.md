@@ -95,7 +95,7 @@ To setup and install this sample ROR Blog project, follow the below steps:
 - Clone this project by the command: 
 
 ```
-$ git clo https://github.com/NahnahAJ/Blog-App.git
+
 ```
 
 - Then switch to the project folder by the bellow query:
