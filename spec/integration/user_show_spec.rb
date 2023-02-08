@@ -26,7 +26,6 @@ RSpec.describe 'users_show', type: :feature do
     expect(page).to have_text('')
   end
 
-
   it "display user's username" do
     expect(page).to have_text('Kaweesi')
   end
