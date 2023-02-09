@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+
+  devise_scope :admin do
+    # Redirests signing out users back to sign-in
+    get "users", to: "devise/sessions#new"
+  end
+  devise_for :admins
  
   
    # Restful design routes
