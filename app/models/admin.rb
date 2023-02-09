@@ -7,7 +7,7 @@ class Admin < ApplicationRecord
          :validatable, authentication_keys: [:login]
 
 
-  attr_accessor :login
+  # attr_accessor :login
 
   attr_writer :login
 
