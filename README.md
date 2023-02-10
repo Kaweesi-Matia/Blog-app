@@ -1,6 +1,8 @@
 <a name="readme-top"></a>
 
-
+<div align="center">
+  <img src="nahnah_logo.png" alt="logo" width="250"  height="auto" />
+</div>
 
 <!-- TABLE OF CONTENTS -->
 
@@ -95,13 +97,13 @@ To setup and install this sample ROR Blog project, follow the below steps:
 - Clone this project by the command: 
 
 ```
-
+$ git clone https://github.com/Kaweesi-Matia/Blog-app.git
 ```
 
 - Then switch to the project folder by the bellow query:
 
 ```
-$ cd blograil
+$ cd blograils
 ```
 
 - Install the required dependecies with `bundle install`
@@ -129,10 +131,12 @@ N/A
 
 👤 **Kaweesi Matia**
 
+
 - 
 - GitHub: [@Kaweesi-Matia](https://github.com/Kaweesi-Matia)
 - Twitter: [@kaweesimatia](https://twitter.com/kaweesimatia)
 - LinkedIn: [Kaweesi Matia](https://www.linkedin.com/in/kaweesi-matia/)
+
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
