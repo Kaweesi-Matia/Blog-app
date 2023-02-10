@@ -94,14 +94,14 @@ To get a local copy up and running, follow these steps.
 To setup and install this sample ROR Blog project, follow the below steps:
 - Clone this project by the command: 
 
-```
+``
 
 ```
 
 - Then switch to the project folder by the bellow query:
 
 ```
-$ cd blograils
+$ cd blograil
 ```
 
 - Install the required dependecies with `bundle install`
