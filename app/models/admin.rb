@@ -6,7 +6,6 @@ class Admin < ApplicationRecord
   #          :recoverable, :rememberable, :trackable,
   #          :validatable,:confirmable, authentication_keys: [:login],
 
-
   #   # attr_accessor :login
 
   #   # attr_writer :login
