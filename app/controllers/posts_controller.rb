@@ -1,8 +1,9 @@
 class PostsController < ApplicationController
-  before_action :authenticate_admin!
+  # before_action :authenticate_admin!
   def index
     @user = User.find(params[:user_id])
     @posts = @user.posts.includes(:comments)
+
     # @posts = Post.where(user_id: @user)
   end
 
@@ -26,8 +27,17 @@ class PostsController < ApplicationController
     end
   end
 
+  def destroy
+    current_user = User.find(params[:user_id])
+    @post = Post.find_by!(id: params[:id])
+    @post.destroy
+    current_user.decrement!(:PostsCounter)
+    redirect_to user_posts_path(current_user)
+  end
+
   def show
     @post = Post.find(params[:id])
+    @user = User.find(params[:user_id])
   end
 
   private
