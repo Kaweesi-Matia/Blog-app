@@ -16,6 +16,10 @@
   <%else%>
   <% @post.all_comments.each do |comment| %>
     <p><%= comment.user.Name %>: <%= comment.text %></p>
+    <% if can? :destroy, comment %>
+    <%= button_to 'Delete Comment', user_post_comment_path(@user, @post, comment), method: :delete %>
+  <% end %>
+
   <% end %>
   <% end %>
 </div>
