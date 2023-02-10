@@ -94,7 +94,7 @@ To get a local copy up and running, follow these steps.
 To setup and install this sample ROR Blog project, follow the below steps:
 - Clone this project by the command: 
 
-``
+```
 
 ```
 
