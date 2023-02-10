@@ -1,10 +1,9 @@
 class PostsController < ApplicationController
-  # before_action :authenticate_admin!
+  before_action :load_and_authorize_resource, only: [:destroy]
+
   def index
     @user = User.find(params[:user_id])
     @posts = @user.posts.includes(:comments)
-
-    # @posts = Post.where(user_id: @user)
   end
 
   def new
