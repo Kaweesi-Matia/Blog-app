@@ -1,9 +1,8 @@
 class PostsController < ApplicationController
-  before_action :load_and_authorize_resource
-
   def index
     @user = User.find(params[:user_id])
     @posts = @user.posts.includes(:comments)
+    render json: @posts
   end
 
   def new
@@ -23,6 +22,7 @@ class PostsController < ApplicationController
       redirect_to user_posts_path(current_user)
     else
       render :new
+
     end
   end
 

@@ -1,6 +1,7 @@
 
 <h3>Post Show</h3>
 <%= link_to "Home", users_path %>
+<%= link_to "post comments",  user_post_comments_path(@post.user_id,@post.id) %>
 
 
 <div class="container">
